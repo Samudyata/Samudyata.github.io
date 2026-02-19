@@ -197,12 +197,23 @@ ul { list-style: none; }
     100% { opacity: 1; transform: scale(1.05); }
 }
 
-.hero-content {
-    text-align: center;
+.hero-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
     position: relative;
     z-index: 1;
-    max-width: 750px;
-    padding-top: 80px;
+    max-width: 1100px;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.hero-content {
+    text-align: left;
+    position: relative;
+    flex: 1;
+    max-width: 600px;
 }
 
 .hero-greeting {
@@ -215,13 +226,13 @@ ul { list-style: none; }
 }
 
 .hero-photo {
-    width: 130px;
-    height: 130px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 20px;
+    flex-shrink: 0;
     border: 3px solid var(--accent);
-    box-shadow: 0 0 40px rgba(108, 99, 255, 0.25), 0 0 80px rgba(108, 99, 255, 0.1);
+    box-shadow: 0 0 50px rgba(108, 99, 255, 0.25), 0 0 100px rgba(108, 99, 255, 0.1);
 }
 
 .hero-photo img {
@@ -233,7 +244,7 @@ ul { list-style: none; }
 }
 
 .hero-photo:hover img {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .hero-name {
@@ -275,7 +286,7 @@ ul { list-style: none; }
 .hero-buttons {
     display: flex;
     gap: 16px;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 32px;
     flex-wrap: wrap;
 }
@@ -318,7 +329,7 @@ ul { list-style: none; }
 .hero-socials {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .hero-socials a {
@@ -1105,6 +1116,29 @@ ul { list-style: none; }
 }
 
 @media (max-width: 768px) {
+    .hero-layout {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-socials {
+        justify-content: center;
+    }
+
+    .hero-photo {
+        width: 180px;
+        height: 180px;
+    }
+
     .nav-menu {
         position: fixed;
         top: 0;
