@@ -322,7 +322,6 @@ p {
 .portrait-card,
 .side-note,
 .ledger-card,
-.facts-card,
 .contact-card {
     background: rgba(251, 246, 238, 0.75);
     border: 1px solid var(--border);
@@ -407,8 +406,7 @@ p {
     font-size: 0.9rem;
 }
 
-.manifesto-grid,
-.note-grid {
+.manifesto-grid {
     display: grid;
     grid-template-columns: 180px minmax(0, 1fr);
     gap: 1.5rem;
@@ -452,10 +450,6 @@ p {
     line-height: 1.02;
 }
 
-.manifesto-line.small {
-    font-size: clamp(1.55rem, 3vw, 2.4rem);
-}
-
 .manifesto-support {
     margin-top: 0.8rem;
     color: var(--muted);
@@ -497,7 +491,7 @@ p {
 
 .project-header h3,
 .ledger-card h3,
-.facts-card h3,
+.education-card h3,
 .approach-item h3 {
     margin: 0.3rem 0 0;
     font-size: 1.35rem;
@@ -513,7 +507,7 @@ p {
 
 .project-summary,
 .ledger-card p,
-.facts-card p,
+.education-card p,
 .approach-item p,
 .contact-card strong,
 .contact-card {
@@ -548,7 +542,7 @@ p {
 }
 
 .ledger-column,
-.facts-column,
+.education-grid,
 .stack-list,
 .approach-list,
 .contact-grid {
@@ -557,11 +551,21 @@ p {
 }
 
 .ledger-card,
-.facts-card,
+.education-card,
 .stack-item,
 .contact-card {
     padding: 1.25rem;
     border-radius: 1rem;
+}
+
+.education-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.education-card {
+    background: rgba(251, 246, 238, 0.75);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
 }
 
 .stack-item {
@@ -574,17 +578,6 @@ p {
     margin: 0.3rem 0 0.55rem;
     font-size: 1.2rem;
     line-height: 1.25;
-}
-
-.stack-item p:last-child {
-    color: var(--muted);
-    font-size: 0.94rem;
-}
-
-.fact-block + .fact-block {
-    margin-top: 1.2rem;
-    padding-top: 1.2rem;
-    border-top: 1px solid var(--border);
 }
 
 .muted {
@@ -612,7 +605,7 @@ p {
 
 .contact-card:hover,
 .ledger-card:hover,
-.facts-card:hover,
+.education-card:hover,
 .stack-item:hover,
 .portrait-card:hover,
 .side-note:hover {
@@ -681,11 +674,11 @@ p {
     .approach-grid,
     .contact-layout,
     .manifesto-grid,
-    .note-grid,
     .project-detail-grid {
         grid-template-columns: 1fr;
     }
 
+    .education-grid,
     .highlights-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -765,6 +758,7 @@ p {
     }
 
     .hero-highlights,
+    .education-grid,
     .highlights-grid {
         grid-template-columns: 1fr;
     }
