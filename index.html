@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samudyata Jagirdar | AI Engineer</title>
     <meta name="description" content="Portfolio of Samudyata Sudarshan Jagirdar - AI Engineer, MS Computer Engineering at ASU, Gold Medalist, and builder of applied AI systems.">
-    <link rel="stylesheet" href="style.css?v=20260406c">
+    <link rel="stylesheet" href="style.css?v=20260513a">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -48,7 +48,7 @@
                         </p>
                         <div class="hero-actions">
                             <a href="#work" class="btn btn-primary">See projects</a>
-                            <a href="#contact" class="btn btn-secondary">Hire me</a>
+                            <a href="#contact" class="btn btn-secondary">Get in touch</a>
                         </div>
                     </div>
 
@@ -103,7 +103,7 @@
                     </div>
 
                     <div class="project-rail">
-                        <article class="project-entry reveal">
+                        <article class="project-entry project-featured reveal">
                             <div class="project-index">
                                 <span>01</span>
                                 <p>Featured</p>
@@ -114,20 +114,64 @@
                                         <p class="card-kicker">Humane AI tooling</p>
                                         <h3>Humane AI Rater</h3>
                                     </div>
-                                    <a href="https://github.com/buildinghumanetech/humane-ai-rater" target="_blank" rel="noreferrer">Repository</a>
-                                </div>
-                                <p class="project-summary">
-                                    Built a Chrome extension and evaluation flow for rating AI responses on humaneness dimensions.
-                                    The project won the Building Humane Tech Hackathon because it made abstract AI-responsibility questions tangible and usable through structured, side-by-side model comparison.
-                                </p>
-                                <div class="project-detail-grid">
-                                    <div>
-                                        <p class="detail-label">What I did</p>
-                                        <p>Built a Chrome extension with Firebase-backed persistence to compare GPT, Claude, Gemini, Grok, and DeepSeek across humaneness dimensions.</p>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Samudyata/humane-ai-rater" target="_blank" rel="noreferrer">Repository</a>
                                     </div>
+                                </div>
+                                <div class="featured-case-study">
                                     <div>
-                                        <p class="detail-label">Why it stands out</p>
-                                        <p>It won 1st place among 50+ participants and shows that I can build for trust, clarity, and evaluation quality, not just model performance.</p>
+                                        <p class="project-summary">
+                                            Built a Chrome extension and evaluation flow for rating AI responses on humaneness dimensions.
+                                            The project won the Building Humane Tech Hackathon because it turned abstract AI-responsibility principles into a structured product workflow.
+                                        </p>
+                                        <div class="project-detail-grid">
+                                            <div>
+                                                <p class="detail-label">Problem</p>
+                                                <p>People comparing AI models often rely on vibes or isolated examples, making it hard to judge whether responses are genuinely helpful, respectful, and user-centered.</p>
+                                            </div>
+                                            <div>
+                                                <p class="detail-label">Build</p>
+                                                <p>Designed the Chrome-extension flow, Firebase-backed persistence, and side-by-side comparison experience for GPT, Claude, Gemini, Grok, and DeepSeek outputs.</p>
+                                            </div>
+                                            <div>
+                                                <p class="detail-label">Impact</p>
+                                                <p>Created a repeatable rating process across humane-tech dimensions and won 1st place among 50+ hackathon participants.</p>
+                                            </div>
+                                            <div>
+                                                <p class="detail-label">Signal</p>
+                                                <p>Shows product judgment around AI evaluation: not only whether a model is capable, but whether its behavior is understandable, accountable, and humane.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rater-preview" aria-label="Humane AI Rater product preview">
+                                        <div class="preview-bar">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="preview-grid">
+                                            <div>
+                                                <p>Response A</p>
+                                                <strong>Helpful, but directive</strong>
+                                            </div>
+                                            <div>
+                                                <p>Response B</p>
+                                                <strong>Empathetic and agency-preserving</strong>
+                                            </div>
+                                        </div>
+                                        <div class="score-row">
+                                            <span>Cared for</span>
+                                            <div><i style="width: 86%"></i></div>
+                                        </div>
+                                        <div class="score-row">
+                                            <span>Present</span>
+                                            <div><i style="width: 72%"></i></div>
+                                        </div>
+                                        <div class="score-row">
+                                            <span>Fulfilled</span>
+                                            <div><i style="width: 78%"></i></div>
+                                        </div>
+                                        <div class="preview-note">Structured review saved to Firebase</div>
                                     </div>
                                 </div>
                             </div>
@@ -136,6 +180,65 @@
                         <article class="project-entry reveal">
                             <div class="project-index">
                                 <span>02</span>
+                                <p>SWE-Bench</p>
+                            </div>
+                            <div class="project-main">
+                                <div class="project-header">
+                                    <div>
+                                        <p class="card-kicker">Software engineering agents</p>
+                                        <h3>SWE-Bench Agent</h3>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Samudyata/swe-bench-agent" target="_blank" rel="noreferrer">Repository</a>
+                                    </div>
+                                </div>
+                                <p class="project-summary">Built an evidence-routed multi-agent system for SWE-bench and SWE-bench-C that generates patches for real GitHub issues using planner, localizer, diagnostician, patcher, and validator roles.</p>
+                                <div class="project-detail-grid">
+                                    <div>
+                                        <p class="detail-label">Core idea</p>
+                                        <p>Instead of retrying the full pipeline after failure, the system classifies evidence from patch, compile, and test errors, then routes it back to the agent that can act on it.</p>
+                                    </div>
+                                    <div>
+                                        <p class="detail-label">Infrastructure</p>
+                                        <p>Built tree-sitter code dependency graphs for C repositories, with keyword-weighted traversal and confidence-scored include, call, type-use, and test edges.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-entry reveal">
+                            <div class="project-index">
+                                <span>03</span>
+                                <p>Audio ML</p>
+                            </div>
+                            <div class="project-main">
+                                <div class="project-header">
+                                    <div>
+                                        <p class="card-kicker">Speech emotion recognition</p>
+                                        <h3>Speech Emotion Recognition</h3>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="https://github.com/Samudyata/Speech-Emotion-Recognition-CNN-RNN" target="_blank" rel="noreferrer">Repository</a>
+                                        <a href="https://huggingface.co/spaces/sjagird1/SER" target="_blank" rel="noreferrer">Demo</a>
+                                    </div>
+                                </div>
+                                <p class="project-summary">Built a CNN-RNN style speech-emotion classifier over mel-spectrogram audio features, classifying anger, disgust, fear, happy, neutral, and sad across RAVDESS, TESS, and CREMA-D data.</p>
+                                <div class="project-detail-grid">
+                                    <div>
+                                        <p class="detail-label">Result</p>
+                                        <p>Reached 90.26% test accuracy with strong per-class F1 scores across the six target emotions.</p>
+                                    </div>
+                                    <div>
+                                        <p class="detail-label">Pipeline</p>
+                                        <p>Handled 4-second audio normalization, mel-spectrogram extraction, log scaling, augmentation, and TensorFlow/Keras model training.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-entry reveal">
+                            <div class="project-index">
+                                <span>04</span>
                                 <p>Agents</p>
                             </div>
                             <div class="project-main">
@@ -152,7 +255,7 @@
 
                         <article class="project-entry reveal">
                             <div class="project-index">
-                                <span>03</span>
+                                <span>05</span>
                                 <p>Vision</p>
                             </div>
                             <div class="project-main">
@@ -169,7 +272,7 @@
 
                         <article class="project-entry reveal">
                             <div class="project-index">
-                                <span>04</span>
+                                <span>06</span>
                                 <p>NLP</p>
                             </div>
                             <div class="project-main">
@@ -203,7 +306,7 @@
                         <article class="ledger-card reveal">
                             <p class="card-kicker">2023 / ISRO</p>
                             <h3>Project Intern</h3>
-                            <p>Worked on space-grade embedded power systems and reliability validation for mission-critical environments.</p>
+                            <p>Designed and validated an LT8631 buck-converter-based embedded power system for space-grade reliability testing in mission-critical environments.</p>
                         </article>
                     </div>
 
@@ -334,6 +437,6 @@
         </footer>
     </div>
 
-    <script src="script.js?v=20260406c"></script>
+    <script src="script.js?v=20260513a"></script>
 </body>
 </html>
